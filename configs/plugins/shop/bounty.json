@@ -1,0 +1,7 @@
+{
+    "prefix": "{darkred}[CS2]{default}",
+    "min_reward": 100,
+    "max_reward": 500,
+    "chance_to_start": 30,
+    "bounty.min_players": 4
+}

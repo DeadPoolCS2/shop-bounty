@@ -1,0 +1,18 @@
+{
+    "new_target": {
+        "en": "A bounty has been placed on {PLAYER_NAME}! Reward: {REWARD} credits!",
+        "ro": "Un bounty a fost pus pe {PLAYER_NAME}! Recompensă: {REWARD} credite!"
+    },
+    "claimed": {
+        "en": "{KILLER} eliminated {TARGET} and earned {REWARD} credits!",
+        "ro": "{KILLER} l-a eliminat pe {TARGET} și a câștigat {REWARD} credite!"
+    },
+    "survived": {
+        "en": "{PLAYER_NAME} survived the round and earned {REWARD} credits!",
+        "ro": "{PLAYER_NAME} a supraviețuit rundei și a câștigat {REWARD} credite!"
+    },
+    "not_enough_players": {
+"en": "Not enough players connected for the bounty event to start. Minimum required: {MIN_PLAYERS}.",
+"ro": "Nu sunt suficienți jucători conectați pentru ca evenimentul bounty să înceapă. Minim necesar: {MIN_PLAYERS}."
+}
+}
