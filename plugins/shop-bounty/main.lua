@@ -30,7 +30,7 @@ local function selectBountyTarget()
     if #players == 0 then return end
 
     bountyTarget = players[math.random(#players)]
-    bountyReward = math.random(config:Fetch("bounty.min_reward"), config:Fetch("bounty.max_reward"))
+    bountyReward = math.random(config:Fetch("shop.bounty.min_reward"), config:Fetch("shop.bounty.max_reward"))
 
     local targetPlayer = GetPlayer(bountyTarget)
     playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix") .. FetchTranslation("bounty.new_target")
@@ -49,13 +49,13 @@ AddEventHandler("OnRoundStart", function()
         end
     end
 
-    if totalPlayers < config:Fetch("bounty.min_players") then
-        playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix"), FetchTranslation("bounty.not_enough_players"):gsub("{MIN_PLAYERS}", config:Fetch("bounty.min_players")))
+    if totalPlayers < config:Fetch("shop.bounty.min_players") then
+        playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix"), FetchTranslation("bounty.not_enough_players"):gsub("{MIN_PLAYERS}", config:Fetch("shop.bounty.min_players")))
         return
     end
 
     local randomChance = math.random(0, 100)
-    if randomChance <= config:Fetch("bounty.chance_to_start") then
+    if randomChance <= config:Fetch("shop.bounty.chance_to_start") then
         selectBountyTarget()
     end
 end)
