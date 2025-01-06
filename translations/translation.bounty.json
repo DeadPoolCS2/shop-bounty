@@ -1,18 +1,26 @@
 {
-    "new_target": {
-        "en": "A bounty has been placed on {PLAYER_NAME}! Reward: {REWARD} credits!",
-        "ro": "Un bounty a fost pus pe {PLAYER_NAME}! Recompensă: {REWARD} credite!"
+    "delimiter": {
+        "en": "◇─◇──◇─◇ ◇─◇──◇─◇{gold} ✦ {gold}PLAYER BOUNTY{gold} ✦ {default}◇─◇──◇─◇ ◇─◇──◇─◇",
+        "ro": "◇─◇──◇─◇ ◇─◇──◇─◇{gold} ✦ {gold}EVENT BOUNTY{gold} ✦ {default}◇─◇──◇─◇ ◇─◇──◇─◇"
     },
-    "claimed": {
-        "en": "{KILLER} eliminated {TARGET} and earned {REWARD} credits!",
-        "ro": "{KILLER} l-a eliminat pe {TARGET} și a câștigat {REWARD} credite!"
+    "credits": {
+        "en": "Reward: {green}{credits} credits!",
+        "ro": "Cine îl omoară primește: {green}{credits} credite!"
     },
-    "survived": {
-        "en": "{PLAYER_NAME} survived the round and earned {REWARD} credits!",
-        "ro": "{PLAYER_NAME} a supraviețuit rundei și a câștigat {REWARD} credite!"
-    },
-    "not_enough_players": {
-"en": "Not enough players connected for the bounty event to start. Minimum required: {MIN_PLAYERS}.",
-"ro": "Nu sunt suficienți jucători conectați pentru ca evenimentul bounty să înceapă. Minim necesar: {MIN_PLAYERS}."
+        "new_target": {
+            "en": "A bounty has been placed on {green}{PLAYER_NAME}!",
+            "ro": "Un bounty a fost pus pe capul lui {green}{PLAYER_NAME}!{default}"
+        },
+        "claimed": {
+            "en": "{KILLER} eliminated {TARGET} and earned {REWARD} credits!",
+            "ro": "{green}{KILLER} {default}l-a eliminat pe {green}{TARGET}{default} și a câștigat {green}{REWARD} credite!"
+        },
+        "survived": {
+            "en": "{PLAYER_NAME} survived the round and earned {REWARD} credits!",
+            "ro": "{green}{PLAYER_NAME}{default} a supraviețuit rundei și a câștigat {green}{REWARD} credite!"
+        },
+        "not_enough_players": {
+    "en": "Not enough players connected for the bounty event to start. Minimum required: {MIN_PLAYERS}.",
+    "ro": "Nu sunt suficienți jucători pentru evenimentul bounty. Minim necesar: {green}{MIN_PLAYERS}."
 }
 }
