@@ -28,6 +28,7 @@
 ### Configuring the plugin 🧐
 
 * After installing the plugin, you can change the prefix and others from the config file: /game/csgo/addons/swiftly/configs/plugins/shop/bounty.json
+* After installing the plugin, you can change the messages from the config file: /game/csgo/addons/swiftly/translations/translation.bounty.json
 
 ### Creating A Pull Request 😃
 
