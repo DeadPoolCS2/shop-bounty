@@ -34,7 +34,7 @@ local function selectBountyTarget()
             playermanager:SendMsg(MessageType.Chat, FetchTranslation("bounty.delimiter"))
     local targetPlayer = GetPlayer(bountyTarget)
     if targetPlayer then
-        playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix") .. " " .. FetchTranslation("bounty.new_target"):gsub("{PLAYER_NAME}", targetPlayer:CBasePlayerController().PlayerName)))
+        playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix") .. " " .. FetchTranslation("bounty.new_target"):gsub("{PLAYER_NAME}", targetPlayer:CBasePlayerController().PlayerName))
             playermanager:SendMsg(MessageType.Chat, config:Fetch("shop.bounty.prefix") .. " " .. FetchTranslation("bounty.credits"):gsub("{REWARD}", bountyReward))
             playermanager:SendMsg(MessageType.Chat, FetchTranslation("bounty.delimiter"))
     end
